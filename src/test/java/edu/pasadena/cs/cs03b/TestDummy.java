@@ -11,15 +11,17 @@ import java.io.*;
 
 public class TestDummy {
 
-   @Test
-   public void testDummy()
-   {
-     // action
-     int iResult = Dummy.dummy();
-     // assertion
-     assertEquals(0, iResult);
+  @Test
+  public void testDummy(){
 
-     // TODO: add your own test cases
+    int[][] set1= { {1} };
+    int[][] iResult = Dummy.generateSet(1);
 
-   }
+    assertEquals(set1, iResult);
+
+    int[][] set3 = { {1, 3, 5, 7}, {2, 3, 6, 7}, {4, 5, 6, 7}};
+    iResult = Dummy.generateSet(3);
+
+    assertEquals(set3, iResult);
+  }
 }
