@@ -11,15 +11,18 @@ import java.io.*;
 
 public class TestDummy {
 
-   @Test
-   public void testDummy()
-   {
-     // action
-     int iResult = Dummy.dummy();
-     // assertion
-     assertEquals(0, iResult);
+  @Test
+  public void testDummy(){
 
-     // TODO: add your own test cases
+    int[] binary1 = {1, 0, 0, 1, 1};
+    int iResult = Dummy.binaryToInt(binary1);
 
-   }
+    assertEquals(19, iResult);
+
+    int[] binary2 = {0, 1, 1, 1, 1, 0, 0};
+    iResult = Dummy.binaryToInt(binary2);
+
+    assertEquals(60, iResult);
+
+  }
 }
