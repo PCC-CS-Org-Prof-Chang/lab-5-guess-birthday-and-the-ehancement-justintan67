@@ -14,14 +14,15 @@ public class TestDummy {
   @Test
   public void testDummy(){
 
-    int[][] set1= { {1} };
-    int[][] iResult = Dummy.generateSet(1);
+    int[] binary1 = {1, 0, 0, 1, 1};
+    int iResult = Dummy.binaryToInt(binary1);
 
-    assertEquals(set1, iResult);
+    assertEquals(19, iResult);
 
-    int[][] set3 = { {1, 3, 5, 7}, {2, 3, 6, 7}, {4, 5, 6, 7}};
-    iResult = Dummy.generateSet(3);
+    int[] binary2 = {0, 1, 1, 1, 1, 0, 0};
+    iResult = Dummy.binaryToInt(binary2);
 
-    assertEquals(set3, iResult);
+    assertEquals(60, iResult);
+
   }
 }

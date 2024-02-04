@@ -1,7 +1,6 @@
 package edu.pasadena.cs.cs03b;
 
 import java.util.Scanner;
-import java.lang.Math;
 
 public class Dummy {
 
@@ -40,9 +39,9 @@ public class Dummy {
 	}
 
 	public static int[][] generateSet(int setAmmount) {
-	
+		
 		int length = (int) Math.pow(2, setAmmount);
-		int[][] sets = new int[setAmmount][length];
+		int[][] sets = new int[setAmmount][length / 2];
 
 		for (int i = 0; i < setAmmount; i++) {
 			int pos = 0;
